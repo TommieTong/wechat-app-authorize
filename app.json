@@ -1,0 +1,28 @@
+{
+  "pages": [
+    "index/index",
+    "example/example"
+  ],
+  "tabBar": {
+    "selectedColor": "#07c160",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "index/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "example/example",
+        "text": "示例"
+      }
+    ]
+  },
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

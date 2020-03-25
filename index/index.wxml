@@ -1,0 +1,4 @@
+<view class="intro">点击下面按钮开始授权</view>
+<view wx:if="{{isEmpower}}" class="intro">全部授权完成！！！</view>
+<button type="primary" bindtap="onTap">授权</button>
+<empower empowerStatus="{{empowerPop}}" wx:if="{{empowerPop}}" bind:empowerevent="empowerChange"></empower>

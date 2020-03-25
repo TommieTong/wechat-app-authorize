@@ -1,0 +1,28 @@
+<!--component/empower/empower.wxml-->
+<view id="empower">
+  <view class="empower-mask">
+    <view class="empower-content">
+      <text wx:if="{{empowerStatus === 1}}" class="empower-text">申请获取你的昵称、头像、地区及性别</text>
+      <text wx:if="{{empowerStatus === 2}}" class="empower-text">申请获取你的手机号</text>
+      <view class="button-list">
+        <button bindtap="cancel" size="mini">取消</button>
+        <button
+          type="primary"
+          size="mini"
+          class="empotwe-button"
+          open-type="getUserInfo"
+          bindgetuserinfo="confirm"
+          wx:if="{{empowerStatus === 1}}"
+        >确认授权</button>
+        <button
+          type="primary"
+          size="mini"
+          class="empotwe-button"
+          open-type="getPhoneNumber"
+          bindgetphonenumber="confirm"
+          wx:if="{{empowerStatus === 2}}"
+        >确认授权</button>
+      </view>
+    </view>
+  </view>
+</view>
