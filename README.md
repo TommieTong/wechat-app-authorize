@@ -1,2 +1,2 @@
 # wechat-app-authorize
-微信小程序授权系统
+微信小程序授权弹窗
