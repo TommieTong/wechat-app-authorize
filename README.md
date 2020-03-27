@@ -3,6 +3,7 @@
 
 获取`userInfo`和`userMobile`
 
+
 ## 说明
 
 1. 当只有`userInfo`或`userMobile`其中一项授权时，会跳过已有授权。例如，已经授权了`userMobile`，则弹窗只会弹出`userInfo`授权；
